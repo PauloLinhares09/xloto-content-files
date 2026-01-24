@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.packapps.xloto",
+      "sha256_cert_fingerprints":
+        ["5F:E8:E5:B4:99:35:67:37:2F:62:EE:D4:3B:EC:46:B3:77:1C:9B:CE:9D:E0:8C:59:5D:27:BC:6B:8C:29:65:80"]
+    }
+  }
+]
