@@ -4,8 +4,15 @@
     "target": {
       "namespace": "android_app",
       "package_name": "com.packapps.xloto",
-      "sha256_cert_fingerprints":
-        ["5F:E8:E5:B4:99:35:67:37:2F:62:EE:D4:3B:EC:46:B3:77:1C:9B:CE:9D:E0:8C:59:5D:27:BC:6B:8C:29:65:80"]
+      "sha256_cert_fingerprints": ["5F:E8:E5:B4:99:35:67:37:2F:62:EE:D4:3B:EC:46:B3:77:1C:9B:CE:9D:E0:8C:59:5D:27:BC:6B:8C:29:65:80"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.packapps.xloto.debug",
+      "sha256_cert_fingerprints": ["73:17:EB:12:A7:82:46:C1:AD:94:BF:26:61:41:0A:F1:D8:D7:26:F4:B0:0A:50:8B:E8:56:D1:E5:C0:4C:98:3A"]
     }
   }
 ]
