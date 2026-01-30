@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>XLoto — Baixar na Google Play</title>
+  <style>
+    :root{
+      --bg: #0b0d10;
+      --card: #12151a;
+      --ink: #e9edf1;
+      --muted: #a8b0ba;
+      --accent: #6ee7ff;
+      --accent-2: #9b8cff;
+      --ok: #34d399;
+      --warn: #f59e0b;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+      --maxw: 940px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--ink);
+      background: radial-gradient(1200px 900px at 10% -10%, rgba(110,231,255,.08), transparent 60%),
+                  radial-gradient(1000px 700px at 110% 10%, rgba(155,140,255,.08), transparent 60%),
+                  var(--bg);
+    }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 48px auto 96px;
+      padding: 0 20px;
+    }
+    header{
+      position: sticky;
+      top:0;
+      background: linear-gradient(180deg, rgba(11,13,16,.9), rgba(11,13,16,.6) 60%, transparent);
+      backdrop-filter: blur(8px);
+      z-index: 10;
+      padding: 16px 0 6px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:12px;
+      max-width: var(--maxw); margin: 0 auto; padding: 0 20px;
+    }
+    .logo{
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    h1{
+      font-weight:800;letter-spacing:.3px;margin:12px 0 0;font-size: clamp(22px, 3.2vw, 28px);
+    }
+    .subtitle{color:var(--muted);margin-top:2px;font-size:14px}
+    .card{
+      background: linear-gradient(180deg,#12161d,#0f1319);
+      border:1px solid #232a33;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      margin-bottom: 22px;
+    }
+    .cta-wrap{
+      text-align: center;
+      margin: 32px 0 24px;
+    }
+    .cta{
+      display: inline-block;
+      text-decoration: none;
+      color: var(--ink);
+      background: linear-gradient(180deg,#1a1f27,#141820);
+      border: 1px solid #232a33;
+      border-radius: 999px;
+      padding: 14px 28px;
+      font-weight: 600;
+      font-size: 18px;
+      transition: transform .08s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .cta:hover{
+      transform: translateY(-2px);
+      border-color: #2f3844;
+      box-shadow: 0 4px 14px rgba(0,0,0,.25);
+    }
+    .cta:focus{
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+    .cta img{
+      display: block;
+      height: 56px;
+      width: auto;
+    }
+    .cta:has(img){
+      padding: 0;
+      background: none;
+      border: none;
+    }
+    .cta:has(img):hover{
+      box-shadow: 0 4px 14px rgba(0,0,0,.2);
+    }
+    .muted{color:var(--muted);font-size:14px;margin-top:12px}
+    .carousel-wrap{
+      display: flex;
+      overflow-x: auto;
+      gap: 16px;
+      padding: 12px 0;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .carousel-slide{
+      flex-shrink: 0;
+      scroll-snap-align: center;
+    }
+    .carousel-slide img{
+      display: block;
+      max-height: 420px;
+      width: auto;
+      object-fit: contain;
+      border-radius: var(--radius);
+    }
+    footer{
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+    a{color:var(--accent)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="/assets/xloto-512.png" alt="XLoto" class="logo" />
+      <div>
+        <h1>XLoto</h1>
+        <div class="subtitle">Baixar na Google Play</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section class="card" aria-labelledby="install-title">
+      <h2 id="install-title" style="margin:0 0 8px;font-size:clamp(20px,3vw,26px);font-weight:800;">Instale o aplicativo XLoto</h2>
+      <p class="muted" style="margin:0;">Obtenha o XLoto na Google Play e acompanhe seus jogos e resultados.</p>
+      <div class="cta-wrap">
+        <a id="play-store-link" href="#" class="cta"><img src="/assets/GetItOnGooglePlay_Badge_Web_color_Portuguese-Brazil.png" alt="Disponível no Google Play" /></a>
+      </div>
+      <p class="muted" style="text-align:center;">Install app</p>
+    </section>
+
+    <section class="card" aria-labelledby="carousel-title">
+      <h2 id="carousel-title" style="margin:0 0 16px;font-size:clamp(20px,3vw,26px);font-weight:800;">Conheça o app</h2>
+      <div class="carousel-wrap" role="region" aria-label="Screenshots do aplicativo XLoto">
+        <div class="carousel-slide">
+          <img src="/assets/screenshot0.webp" alt="Screenshot do aplicativo XLoto 1" />
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/screenshot1.webp" alt="Screenshot do aplicativo XLoto 2" />
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/screenshot2.webp" alt="Screenshot do aplicativo XLoto 3" />
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/screenshot3.webp" alt="Screenshot do aplicativo XLoto 4" />
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/screenshot4.webp" alt="Screenshot do aplicativo XLoto 5" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> XLoto
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var PLAY_STORE_BASE = 'https://play.google.com/store/apps/details?id=com.packapps.xloto';
+      var DEEP_LINK_BASE = 'https://xloto.app.br';
+      var GENERIC_REFERRER = 'utm_source=website&utm_medium=install_page&utm_campaign=xloto_app';
+
+      function getQueryParams() {
+        var search = window.location.search;
+        if (!search) return {};
+        var params = {};
+        var pairs = search.slice(1).split('&');
+        for (var i = 0; i < pairs.length; i++) {
+          var p = pairs[i].split('=');
+          if (p[0]) params[decodeURIComponent(p[0])] = p[1] ? decodeURIComponent(p[1].replace(/\+/g, ' ')) : '';
+        }
+        return params;
+      }
+
+      function buildDeepLinkFromParams(params) {
+        var gameId = params.game;
+        var closureId = params.closure;
+        var contestId = params.contest;
+        var ticketLottery = params.ticket;
+        var lotteryType = params.lotteryType;
+        var closureIdQuery = params.closureId;
+        var isSpecialEdition = params.isSpecialEdition;
+
+        if (gameId && lotteryType) {
+          var url = DEEP_LINK_BASE + '/game/' + gameId + '?lotteryType=' + lotteryType;
+          if (closureIdQuery) url += '&closureId=' + closureIdQuery;
+          return url;
+        }
+        if (closureId && lotteryType) {
+          return DEEP_LINK_BASE + '/closure/' + closureId + '?lotteryType=' + lotteryType;
+        }
+        if (contestId && lotteryType) {
+          return DEEP_LINK_BASE + '/contest/' + contestId + '?lotteryType=' + lotteryType;
+        }
+        if (ticketLottery) {
+          var ticketUrl = DEEP_LINK_BASE + '/ticket/' + ticketLottery;
+          if (isSpecialEdition === 'true' || isSpecialEdition === '1') ticketUrl += '?isSpecialEdition=true';
+          return ticketUrl;
+        }
+        return null;
+      }
+
+      function buildPlayStoreHref() {
+        var params = getQueryParams();
+        var deepLink = buildDeepLinkFromParams(params);
+        var referrerValue = deepLink !== null ? deepLink : GENERIC_REFERRER;
+        var encoded = encodeURIComponent(referrerValue);
+        return PLAY_STORE_BASE + '&referrer=' + encoded;
+      }
+
+      function init() {
+        var link = document.getElementById('play-store-link');
+        if (link) link.href = buildPlayStoreHref();
+        var yearEl = document.getElementById('year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+</body>
+</html>
