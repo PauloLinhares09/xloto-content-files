@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>XLoto — Baixar na Google Play</title>
+  <title>X-Loto — Baixar na Google Play</title>
   <style>
     :root{
       --bg: #0b0d10;
@@ -45,12 +45,21 @@
       display:flex;align-items:center;gap:12px;
       max-width: var(--maxw); margin: 0 auto; padding: 0 20px;
     }
-    .logo{
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      object-fit: contain;
+    .logo-card{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.12), 0 4px 14px rgba(0,0,0,.08);
       flex-shrink: 0;
+    }
+    .logo-card .logo{
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
     }
     h1{
       font-weight:800;letter-spacing:.3px;margin:12px 0 0;font-size: clamp(22px, 3.2vw, 28px);
@@ -134,9 +143,11 @@
 <body>
   <header>
     <div class="brand">
-      <img src="/assets/xloto-512.png" alt="XLoto" class="logo" />
+      <div class="logo-card">
+        <img src="/assets/xloto-512.png" alt="X-Loto" class="logo" />
+      </div>
       <div>
-        <h1>XLoto</h1>
+        <h1>X-Loto</h1>
         <div class="subtitle">Baixar na Google Play</div>
       </div>
     </div>
@@ -144,37 +155,37 @@
 
   <div class="wrap">
     <section class="card" aria-labelledby="install-title">
-      <h2 id="install-title" style="margin:0 0 8px;font-size:clamp(20px,3vw,26px);font-weight:800;">Instale o aplicativo XLoto</h2>
-      <p class="muted" style="margin:0;">Obtenha o XLoto na Google Play e acompanhe seus jogos e resultados.</p>
+      <h2 id="install-title" style="margin:0 0 8px;font-size:clamp(20px,3vw,26px);font-weight:800;">Instale o aplicativo X-Loto</h2>
+      <p class="muted" style="margin:0;">Obtenha o X-Loto na Google Play e acompanhe seus jogos e resultados.</p>
       <div class="cta-wrap">
         <a id="play-store-link" href="#" class="cta"><img src="/assets/GetItOnGooglePlay_Badge_Web_color_Portuguese-Brazil.png" alt="Disponível no Google Play" /></a>
       </div>
-      <p class="muted" style="text-align:center;">Install app</p>
+      <p class="muted" style="text-align:center;">Instale o Aplicativo</p>
     </section>
 
     <section class="card" aria-labelledby="carousel-title">
       <h2 id="carousel-title" style="margin:0 0 16px;font-size:clamp(20px,3vw,26px);font-weight:800;">Conheça o app</h2>
-      <div class="carousel-wrap" role="region" aria-label="Screenshots do aplicativo XLoto">
+      <div class="carousel-wrap" role="region" aria-label="Screenshots do aplicativo X-Loto">
         <div class="carousel-slide">
-          <img src="/assets/screenshot0.webp" alt="Screenshot do aplicativo XLoto 1" />
+          <img src="/assets/screenshot0.webp" alt="Screenshot do aplicativo X-Loto 1" />
         </div>
         <div class="carousel-slide">
-          <img src="/assets/screenshot1.webp" alt="Screenshot do aplicativo XLoto 2" />
+          <img src="/assets/screenshot1.webp" alt="Screenshot do aplicativo X-Loto 2" />
         </div>
         <div class="carousel-slide">
-          <img src="/assets/screenshot2.webp" alt="Screenshot do aplicativo XLoto 3" />
+          <img src="/assets/screenshot2.webp" alt="Screenshot do aplicativo X-Loto 3" />
         </div>
         <div class="carousel-slide">
-          <img src="/assets/screenshot3.webp" alt="Screenshot do aplicativo XLoto 4" />
+          <img src="/assets/screenshot3.webp" alt="Screenshot do aplicativo X-Loto 4" />
         </div>
         <div class="carousel-slide">
-          <img src="/assets/screenshot4.webp" alt="Screenshot do aplicativo XLoto 5" />
+          <img src="/assets/screenshot4.webp" alt="Screenshot do aplicativo X-Loto 5" />
         </div>
       </div>
     </section>
 
     <footer>
-      &copy; <span id="year"></span> XLoto
+      &copy; <span id="year"></span> X-Loto
     </footer>
   </div>
 
