@@ -237,6 +237,12 @@
 
       function buildPlayStoreHref() {
         var params = getQueryParams();
+        var referrerUrl = params.referrerUrl ? params.referrerUrl.trim() : '';
+        if (referrerUrl && referrerUrl.indexOf('https://xloto.app.br/') === 0) {
+          var referrerValue = referrerUrl;
+          var encoded = encodeURIComponent(referrerValue);
+          return PLAY_STORE_BASE + '&referrer=' + encoded;
+        }
         var deepLink = buildDeepLinkFromParams(params);
         var referrerValue = deepLink !== null ? deepLink : GENERIC_REFERRER;
         var encoded = encodeURIComponent(referrerValue);

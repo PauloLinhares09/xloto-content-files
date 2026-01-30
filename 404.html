@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecionando — X-Loto</title>
+  <meta http-equiv="refresh" content="0;url=https://xloto.app.br/app/" />
+</head>
+<body>
+  <p>Redirecionando para a página de instalação…</p>
+  <script>
+    (function () {
+      var path = window.location.pathname || '';
+      var appBase = 'https://xloto.app.br/app/';
+      var isDeepLink = path.indexOf('/game/') === 0 ||
+                       path.indexOf('/closure/') === 0 ||
+                       path.indexOf('/contest/') === 0 ||
+                       path.indexOf('/ticket/') === 0;
+      var target = isDeepLink
+        ? appBase + '?referrerUrl=' + encodeURIComponent(window.location.href)
+        : appBase;
+      window.location.replace(target);
+    })();
+  </script>
+</body>
+</html>
